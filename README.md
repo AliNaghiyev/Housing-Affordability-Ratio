@@ -5,7 +5,6 @@
 The "Global Housing Affordability Crisis" is a popular headline, but measuring it requires more than looking just house prices. This project analyzes the decoupling of **Real House Price Indices (HPI)** from **Real Household Disposable Income** across 30+ major economies.
 
 The goal was to build an automated data pipeline and an interactive dashboard to answer: **Which countries are facing the most severe housing affordability crises today?**
-The important visualizations: [Visaulizations](https://github.com/AliNaghiyev/Housing-Affordability-Ratio/blob/main/Visualization/Housing%20Affordability.pdf)
 ## Key Findings
 Based on the analysis of OECD data (1975–2024):
 
@@ -25,6 +24,8 @@ Raw data from the OECD was processed using Python to ensure a fair comparison be
 * 
     * *Formula:* `(Current Value / Base Value) * 100`
 
+The used Jupyter codes:[Codes](https://github.com/AliNaghiyev/Housing-Affordability-Ratio/blob/main/codes/Housing%20Affordability.ipynb)
+
 ### 2. Visualization (Power BI)
 The data was exported to Power BI for interactive analysis.
 * **Dynamic Time Intelligence:** Used DAX to handle time slicers correctly.
@@ -34,7 +35,8 @@ The data was exported to Power BI for interactive analysis.
     * **Affordability Ratio:** `(House Price Index / Income Index) * 100`
     * **YoY Growth:** Calculated year-over-year percentage change to identify trends.
 * **UX Design:** Implemented dynamic coloring (Red/Green gradients) on maps and charts to visually highlight "danger zones" (Affordability Ratio > 100).
-The used Jupyter codes:[Codes](https://github.com/AliNaghiyev/Housing-Affordability-Ratio/blob/main/codes/Housing%20Affordability.ipynb)
+
+The important visualizations: [Visaulizations](https://github.com/AliNaghiyev/Housing-Affordability-Ratio/blob/main/Visualization/Housing%20Affordability.pdf)
 ## Key DAX Formulas
 To ensure the KPI cards reflect the *end* of the selected period (the current status) while the charts show the *history*:
 
